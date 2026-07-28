@@ -55,7 +55,7 @@ const requirements = [
 const faqs = [
   {
     question: "¿Cómo me registro?",
-    answer: "Podés completar el formulario de registro en la sección 'Quiero ser Capitán' en esta web o descargar la aplicación LIX Capitán y subir fotos de tu DNI, matrícula náutica y papeles de la embarcación."
+    answer: "El registro se realiza exclusivamente a través de la aplicación móvil LIX Capitán. Descargá la app en tu teléfono, completá el formulario de registro y cargá las fotos de tu DNI, matrícula náutica y papeles de la embarcación."
   },
   {
     question: "¿Cuánto demora la validación?",
