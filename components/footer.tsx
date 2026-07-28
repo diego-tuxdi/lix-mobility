@@ -12,7 +12,7 @@ export function Footer() {
             <p className="mt-5 max-w-xs text-sm leading-6 text-white/65">La nueva forma de moverte.</p>
           </div>
           <div>
-            <p className="text-sm font-semibold">Lix</p>
+            <p className="text-sm font-semibold">LIX</p>
             <div className="mt-4 flex flex-col gap-3 text-sm text-white/65">
               <Link href="/#como-funciona">Cómo funciona</Link>
               <Link href="/capitanes">Capitanes</Link>
@@ -41,11 +41,6 @@ export function Footer() {
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                 </svg>
               </a>
-              <a href="https://twitter.com/lixmobility" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="Twitter">
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
-                </svg>
-              </a>
               <a href="https://linkedin.com/company/lixmobility" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="LinkedIn">
                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
@@ -56,7 +51,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <p className="mt-14 border-t border-white/10 pt-7 text-xs text-white/50">© {new Date().getFullYear()} Lix Mobility. Todos los derechos reservados.</p>
+        <p className="mt-14 border-t border-white/10 pt-7 text-xs text-white/50">© {new Date().getFullYear()} LIX Mobility. Todos los derechos reservados.</p>
       </Container>
     </footer>
   );
