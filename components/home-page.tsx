@@ -53,14 +53,21 @@ const faqs = [
 export function HomePage() {
   const [activeStep, setActiveStep] = useState(0);
   const [scrollY, setScrollY] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    handleResize();
     window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -85,7 +92,7 @@ export function HomePage() {
           alt="Pantalla de bienvenida de LIX Mobility"
           priority
           className="relative z-10"
-          style={{ transform: `translateY(${scrollY * 0.08}px)` }}
+          style={!isMobile ? { transform: `translateY(${scrollY * 0.08}px)` } : {}}
         />
       </ScrollReveal>
     </Container>
@@ -99,7 +106,7 @@ export function HomePage() {
         <PhoneMockup
           src="/img/Bienvenida.jpg"
           alt="Pantalla de bienvenida"
-          style={{ transform: `translateY(${(scrollY - 600) * 0.04}px)` }}
+          style={!isMobile ? { transform: `translateY(${(scrollY - 600) * 0.04}px)` } : {}}
         />
       </div>
       {/* Right phone: Map */}
@@ -107,7 +114,7 @@ export function HomePage() {
         <PhoneMockup
           src="/img/Resumen del viaje.jpg"
           alt="Pantalla de mapa y viaje"
-          style={{ transform: `translateY(${(scrollY - 600) * 0.08}px)` }}
+          style={!isMobile ? { transform: `translateY(${(scrollY - 600) * 0.08}px)` } : {}}
         />
       </div>
     </ScrollReveal>
@@ -156,7 +163,7 @@ export function HomePage() {
               >
                 <div className="overflow-hidden">
                   <p className="text-base leading-7 text-muted pl-14">{step.copy}</p>
-                  <div className="mt-6 block lg:hidden">
+                  <div className="mt-6 block lg:hidden pb-10 px-4">
                     <PhoneMockup src={step.image} alt={`Pantalla de LIX: ${step.title}`} />
                   </div>
                 </div>
@@ -264,7 +271,7 @@ export function HomePage() {
         <PhoneMockup
           src="/img/iPhone 13 & 14 - 34.jpg"
           alt="Pantalla principal de LIX"
-          style={{ transform: `translateY(${(scrollY - 4500) * 0.05}px)` }}
+          style={!isMobile ? { transform: `translateY(${(scrollY - 4500) * 0.05}px)` } : {}}
         />
       </div>
       {/* Right phone */}
@@ -272,7 +279,7 @@ export function HomePage() {
         <PhoneMockup
           src="/img/viaje finalizado.jpg"
           alt="Pantalla de viaje finalizado de LIX"
-          style={{ transform: `translateY(${(scrollY - 2800) * -0.03}px)` }}
+          style={!isMobile ? { transform: `translateY(${(scrollY - 2800) * -0.03}px)` } : {}}
         />
       </div>
     </ScrollReveal>

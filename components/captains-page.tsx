@@ -82,14 +82,21 @@ const faqs = [
 export function CaptainsPage() {
   const [activeStep, setActiveStep] = useState(0);
   const [scrollY, setScrollY] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    handleResize();
     window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -111,7 +118,7 @@ export function CaptainsPage() {
         src="/img/Bienvenida-2.jpg"
         alt="Pantalla de acceso de LIX Mobility Capitan"
         priority
-        style={{ transform: `translateY(${scrollY * 0.08}px)` }}
+        style={!isMobile ? { transform: `translateY(${scrollY * 0.08}px)` } : {}}
       />
     </ScrollReveal>
   </Container></section>
@@ -172,7 +179,7 @@ export function CaptainsPage() {
               >
                 <div className="overflow-hidden">
                   <p className="text-base leading-7 text-muted pl-14">{step.copy}</p>
-                  <div className="mt-6 block lg:hidden">
+                  <div className="mt-6 block lg:hidden pb-10 px-4">
                     <PhoneMockup src={step.image} alt={`Paso de Capitán LIX: ${step.title}`} />
                   </div>
                 </div>
