@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     question: "¿Dónde está disponible?",
-    answer: "Actualmente operamos en zonas estratégicas del Delta y norte de Buenos Aires, incluyendo Tigre Centro, Nordelta y canales fluviales aledaños."
+    answer: "Actualmente operamos en zonas estratégicas del Delta y norte de Buenos Aires, incluyendo Tigre Centro, Escobar, Nordelta y canales fluviales aledaños."
   },
   {
     question: "¿Cómo puedo convertirme en capitán?",
@@ -270,8 +270,8 @@ export function HomePage() {
       {/* Right phone */}
       <div className="absolute right-2 top-16 z-20 w-[190px] sm:w-[210px]">
         <PhoneMockup
-          src="/img/iPhone 13 & 14 - 35.jpg"
-          alt="Pantalla de viaje de LIX"
+          src="/img/viaje finalizado.jpg"
+          alt="Pantalla de viaje finalizado de LIX"
           style={{ transform: `translateY(${(scrollY - 2800) * -0.03}px)` }}
         />
       </div>
