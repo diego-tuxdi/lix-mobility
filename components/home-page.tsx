@@ -38,11 +38,11 @@ const faqs = [
   },
   {
     question: "¿Dónde está disponible?",
-    answer: "Actualmente operamos en zonas estratégicas del Delta y norte de Buenos Aires, incluyendo Tigre Centro, San Fernando, Nordelta y canales fluviales aledaños."
+    answer: "Actualmente operamos en zonas estratégicas del Delta y norte de Buenos Aires, incluyendo Tigre Centro, Nordelta y canales fluviales aledaños."
   },
   {
     question: "¿Cómo puedo convertirme en capitán?",
-    answer: "Si tenés una embarcación habilitada y licencia náutica vigente (Conductor Náutico o superior), podés registrarte desde la sección de Capitanes de nuestra web o descargar la aplicación LIX Capitán para iniciar tu validación."
+    answer: "Para convertirte en Capitán LIX, descargá la app LIX Capitán desde la tienda y registrate ingresando tus datos personales, la información de tu embarcación y la documentación correspondiente. Una vez enviado el formulario, tu cuenta quedará pendiente de aprobación. Cuando nuestro equipo valide los datos y apruebe tu perfil, ¡ya podés conectarte y empezar a realizar viajes!"
   },
   {
     question: "¿Qué sucede si cancelo un viaje?",
