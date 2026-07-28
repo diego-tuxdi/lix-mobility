@@ -26,15 +26,15 @@ const benefits = [
 const faqs = [
   {
     question: "¿Cómo solicito un viaje?",
-    answer: "Abrí la aplicación Lix, ingresá tu punto de partida y tu destino en el mapa, y confirmá la solicitud. El sistema buscará el capitán disponible más cercano para realizar tu viaje."
+    answer: "Abrí la aplicación LIX, ingresá tu punto de partida y tu destino en el mapa, y confirmá la solicitud. El sistema buscará el capitán disponible más cercano para realizar tu viaje."
   },
   {
     question: "¿Cómo se calcula el precio?",
     answer: "El precio se estima de forma transparente en la aplicación antes de confirmar el viaje, basándose en la distancia del trayecto, el tipo de embarcación solicitada y la demanda actual del servicio."
   },
   {
-    question: "¿Qué métodos de pago acepta Lix?",
-    answer: "Aceptamos tarjetas de crédito y débito integradas en la aplicación, así como también medios de pago electrónico locales y dinero en efectivo según la disponibilidad de la zona."
+    question: "¿Qué métodos de pago acepta LIX?",
+    answer: "LIX acepta Mercado Pago y dinero en efectivo."
   },
   {
     question: "¿Dónde está disponible?",
@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     question: "¿Cómo puedo convertirme en capitán?",
-    answer: "Si tenés una embarcación habilitada y licencia náutica vigente (Conductor Náutico o superior), podés registrarte desde la sección de Capitanes de nuestra web o descargar la aplicación Lix Capitán para iniciar tu validación."
+    answer: "Si tenés una embarcación habilitada y licencia náutica vigente (Conductor Náutico o superior), podés registrarte desde la sección de Capitanes de nuestra web o descargar la aplicación LIX Capitán para iniciar tu validación."
   },
   {
     question: "¿Qué sucede si cancelo un viaje?",
@@ -68,7 +68,7 @@ export function HomePage() {
   <section id="inicio" className="hero-grid relative overflow-hidden bg-water pt-32 sm:pt-36 lg:min-h-[820px] lg:pt-44">
     <Container className="grid items-center gap-14 pb-20 lg:grid-cols-[1.1fr_.9fr] lg:pb-28">
       <div className="relative z-10">
-        <ScrollReveal delay={100}><p className="mb-5 text-sm font-semibold uppercase tracking-[.2em] text-ink">Lix Mobility</p></ScrollReveal>
+        <ScrollReveal delay={100}><p className="mb-5 text-sm font-semibold uppercase tracking-[.2em] text-ink">LIX Mobility</p></ScrollReveal>
         <ScrollReveal delay={200}><h1 className="text-balance text-5xl font-semibold leading-[.98] tracking-[-.055em] text-ink-deep sm:text-6xl lg:text-7xl">La nueva forma de moverte.</h1></ScrollReveal>
         <ScrollReveal delay={300}><p className="mt-7 max-w-xl text-lg leading-8 text-muted sm:text-xl">Solicitá viajes de forma rápida, simple y segura desde una aplicación diseñada para conectar pasajeros y capitanes.</p></ScrollReveal>
         <ScrollReveal delay={400}>
@@ -82,7 +82,7 @@ export function HomePage() {
         <div aria-hidden className="absolute inset-8 rounded-full bg-white/45 blur-3xl" />
         <PhoneMockup
           src="/img/Bienvenida-1.jpg"
-          alt="Pantalla de bienvenida de Lix Mobility"
+          alt="Pantalla de bienvenida de LIX Mobility"
           priority
           className="relative z-10"
           style={{ transform: `translateY(${scrollY * 0.08}px)` }}
@@ -112,7 +112,7 @@ export function HomePage() {
       </div>
     </ScrollReveal>
     <ScrollReveal delay={100} className="order-first lg:order-last">
-      <SectionHeading eyebrow="¿Qué es Lix Mobility?" title="Movilidad acuática, simplificada." copy="Lix Mobility conecta pasajeros y embarcaciones mediante una plataforma digital que hace que trasladarse por el agua sea tan simple como solicitar un viaje desde una aplicación." />
+      <SectionHeading eyebrow="¿Qué es LIX Mobility?" title="Movilidad acuática, simplificada." copy="LIX Mobility conecta pasajeros y embarcaciones mediante una plataforma digital que hace que trasladarse por el agua sea tan simple como solicitar un viaje desde una aplicación." />
       <div className="mt-10 grid gap-6 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
         {[["Simple", "Solicitá un viaje en pocos pasos desde tu teléfono."], ["Conectado", "Seguí el recorrido de tu embarcación en tiempo real."], ["Seguro", "Capitanes verificados y una experiencia diseñada para generar confianza."]].map(([title, copy]) => <div key={title} className="border-t border-line pt-5"><h3 className="font-semibold text-ink-deep">{title}</h3><p className="mt-2 text-sm leading-6 text-muted">{copy}</p></div>)}
       </div>
@@ -157,7 +157,7 @@ export function HomePage() {
                 <div className="overflow-hidden">
                   <p className="text-base leading-7 text-muted pl-14">{step.copy}</p>
                   <div className="mt-6 block lg:hidden">
-                    <PhoneMockup src={step.image} alt={`Pantalla de Lix: ${step.title}`} />
+                    <PhoneMockup src={step.image} alt={`Pantalla de LIX: ${step.title}`} />
                   </div>
                 </div>
               </div>
@@ -174,7 +174,7 @@ export function HomePage() {
               activeStep === index ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
             }`}
           >
-            <PhoneMockup src={step.image} alt={`Pantalla de Lix: ${step.title}`} />
+            <PhoneMockup src={step.image} alt={`Pantalla de LIX: ${step.title}`} />
           </div>
         ))}
       </ScrollReveal>
@@ -183,7 +183,7 @@ export function HomePage() {
 
   <Section id="beneficios"><Container>
     <ScrollReveal delay={100}>
-      <SectionHeading title="¿Por qué elegir Lix?" copy="Diseñamos una experiencia de movilidad pensada para ser simple, segura y completely digital." />
+      <SectionHeading title="¿Por qué elegir LIX?" copy="Diseñamos una experiencia de movilidad pensada para ser simple, segura y completamente digital." />
     </ScrollReveal>
     <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
       {benefits.map((benefit, idx) => (
@@ -216,7 +216,7 @@ export function HomePage() {
         <ScrollReveal delay={100}>
           <article className="h-full rounded-[2rem] bg-white/5 border border-white/10 p-8 sm:p-12 text-left backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white/20">
             <p className="text-sm font-semibold uppercase tracking-[.18em] text-water-strong">Pasajeros</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-.04em]">Viajá con Lix</h2>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-.04em]">Viajá con LIX</h2>
             <p className="mt-5 leading-7 text-white/70">Descubrí una nueva forma de trasladarte utilizando una aplicación simple e intuitiva.</p>
             <div className="mt-8"><Button href="#descarga" variant="light">Descargar App</Button></div>
           </article>
@@ -224,7 +224,7 @@ export function HomePage() {
         <ScrollReveal delay={300}>
           <article className="h-full rounded-[2rem] bg-white/5 border border-white/10 p-8 sm:p-12 text-left backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white/20">
             <p className="text-sm font-semibold uppercase tracking-[.18em] text-water-strong">Capitanes</p>
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-.04em]">Navegá con Lix</h2>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-.04em]">Navegá con LIX</h2>
             <p className="mt-5 leading-7 text-white/70">Sumate a la plataforma y administrá tus viajes desde una aplicación diseñada para facilitar tu operación.</p>
             <div className="mt-8"><Button href="/capitanes" variant="light">Conocé más</Button></div>
           </article>
@@ -235,7 +235,7 @@ export function HomePage() {
 
   <Section><Container className="grid gap-12 lg:grid-cols-2 items-center">
     <ScrollReveal delay={100}>
-      <SectionHeading eyebrow="Cobertura" title="Disponible en zonas seleccionadas" copy="Lix Mobility comienza su operación en ubicaciones específicas y continuará incorporando nuevas zonas a medida que crezca la plataforma." />
+      <SectionHeading eyebrow="Cobertura" title="Disponible en zonas seleccionadas" copy="LIX Mobility comienza su operación en ubicaciones específicas y continuará incorporando nuevas zonas a medida que crezca la plataforma." />
       <div className="mt-8">
         <div className="flex flex-wrap gap-2.5">
           {["Tigre Centro", "Delta de Tigre"].map((city) => (
@@ -247,7 +247,7 @@ export function HomePage() {
       </div>
     </ScrollReveal>
     <ScrollReveal delay={300} className="relative h-[340px] sm:h-[400px] w-full overflow-hidden rounded-[2.5rem] border border-line">
-      <Image unoptimized src="/img/cobertura.png" alt="Zonas de cobertura de Lix Mobility" fill className="object-cover" />
+      <Image unoptimized src="/img/cobertura.png" alt="Zonas de cobertura de LIX Mobility" fill className="object-cover" />
     </ScrollReveal>
   </Container></Section>
 
@@ -263,7 +263,7 @@ export function HomePage() {
       <div className="absolute left-2 top-6 z-10 w-[190px] sm:w-[210px]">
         <PhoneMockup
           src="/img/iPhone 13 & 14 - 34.jpg"
-          alt="Pantalla principal de Lix"
+          alt="Pantalla principal de LIX"
           style={{ transform: `translateY(${(scrollY - 4500) * 0.05}px)` }}
         />
       </div>
@@ -271,7 +271,7 @@ export function HomePage() {
       <div className="absolute right-2 top-16 z-20 w-[190px] sm:w-[210px]">
         <PhoneMockup
           src="/img/iPhone 13 & 14 - 35.jpg"
-          alt="Pantalla de viaje de Lix"
+          alt="Pantalla de viaje de LIX"
           style={{ transform: `translateY(${(scrollY - 2800) * -0.03}px)` }}
         />
       </div>
