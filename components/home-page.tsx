@@ -26,7 +26,7 @@ const benefits = [
 const faqs = [
   {
     question: "¿Cómo solicito un viaje?",
-    answer: "Abrí la aplicación LIX, ingresá tu punto de partida y tu destino en el mapa, y confirmá la solicitud. El sistema buscará el capitán disponible más cercano para realizar tu viaje."
+    answer: "Abrí la aplicación LIX, ingresá tu punto de partida y tu destino en el mapa, y confirmá la solicitud. El sistema buscará al capitán disponible más cercano para realizar tu viaje."
   },
   {
     question: "¿Cómo se calcula el precio?",

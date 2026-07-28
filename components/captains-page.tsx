@@ -116,7 +116,7 @@ export function CaptainsPage() {
     <ScrollReveal delay={200} className="relative">
       <PhoneMockup
         src="/img/Bienvenida-2.jpg"
-        alt="Pantalla de acceso de LIX Mobility Capitan"
+        alt="Pantalla de acceso de LIX Mobility Capitán"
         priority
         style={!isMobile ? { transform: `translateY(${scrollY * 0.08}px)` } : {}}
       />

@@ -5,7 +5,7 @@ import { Container, Section, ScrollReveal } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Política de Privacidad",
-  description: "Política de Privacidad de la plataforma Lix Mobility.",
+  description: "Política de Privacidad de la plataforma LIX Mobility.",
   alternates: { canonical: "/privacidad" },
 };
 
@@ -29,7 +29,7 @@ export default function PrivacyPage() {
           <Container className="max-w-[800px] text-left">
             <ScrollReveal delay={200} className="prose prose-slate leading-8 text-muted space-y-8">
               <p>
-                En Lix Mobility, valoramos tu privacidad y nos comprometemos a proteger la información personal que compartís con nosotros. Esta Política de Privacidad describe cómo recopilamos, utilizamos, almacenamos y protegemos tus datos cuando accedés a nuestro sitio web o utilizás nuestra aplicación móvil.
+                En LIX Mobility, valoramos tu privacidad y nos comprometemos a proteger la información personal que compartís con nosotros. Esta Política de Privacidad describe cómo recopilamos, utilizamos, almacenamos y protegemos tus datos cuando accedés a nuestro sitio web o utilizás nuestra aplicación móvil.
               </p>
 
               <div>
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
               <div>
                 <h2 className="text-xl font-semibold text-ink-deep mb-3">2. Geolocalización en Tiempo Real</h2>
                 <p>
-                  Para habilitar la asignación de viajes y el seguimiento del recorrido por seguridad de ambas partes, Lix recopila datos de ubicación exacta de tu dispositivo móvil. En el caso de los capitanes, la geolocalización puede ejecutarse en segundo plano mientras la aplicación esté activa y en modo de trabajo. Podés desactivar el permiso de geolocalización en los ajustes de tu dispositivo, pero esto inhabilitará la capacidad de solicitar o aceptar viajes.
+                  Para habilitar la asignación de viajes y el seguimiento del recorrido por seguridad de ambas partes, LIX recopila datos de ubicación exacta de tu dispositivo móvil. En el caso de los capitanes, la geolocalización puede ejecutarse en segundo plano mientras la aplicación esté activa y en modo de trabajo. Podés desactivar el permiso de geolocalización en los ajustes de tu dispositivo, pero esto inhabilitará la capacidad de solicitar o aceptar viajes.
                 </p>
               </div>
 
@@ -74,13 +74,13 @@ export default function PrivacyPage() {
               </div>
 
               <div>
-                <h2 className="text-xl font-semibold text-ink-deep mb-3">5. Compartido de Información con Terceros</h2>
+                <h2 className="text-xl font-semibold text-ink-deep mb-3">5. Uso Compartido de la Información con Terceros</h2>
                 <p>
                   No vendemos ni alquilamos tus datos personales. Compartimos información únicamente con:
                 </p>
                 <ul className="list-disc pl-6 mt-3 space-y-2">
                   <li>Proveedores de servicios tecnológicos integrados (por ejemplo, pasarelas de pago y servicios de cartografía).</li>
-                  <li>Autoridades regulatorias o de seguridad en caso de ser requerido legalmente o ante situaciones de emergencia vial/fluvial.</li>
+                  <li>Autoridades regulatorias o de seguridad en caso de ser requerido legalmente o ante situaciones de emergencia fluvial.</li>
                 </ul>
               </div>
 

@@ -10,7 +10,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   return <header className="fixed inset-x-0 top-0 z-50 border-b border-line/70 bg-white/95 backdrop-blur-md">
     <Container className="flex h-20 items-center justify-between">
-      <Link href="/" aria-label="Lix Mobility — Inicio" className="text-ink"><Logo className="h-8 w-auto" /></Link>
+      <Link href="/" aria-label="LIX Mobility — Inicio" className="text-ink"><Logo className="h-8 w-auto" /></Link>
       <nav aria-label="Navegación principal" className="hidden items-center gap-7 md:flex">{links.map((link) => <Link key={link.href} href={link.href} className="text-sm font-medium text-ink-deep transition hover:text-ink">{link.label}</Link>)}<Button href="/#descarga">Descargar App</Button></nav>
       <button type="button" aria-label={open ? "Cerrar menú" : "Abrir menú"} aria-expanded={open} onClick={() => setOpen(!open)} className="grid h-11 w-11 place-items-center rounded-full border border-line md:hidden"><span aria-hidden className="text-xl">{open ? "×" : "≡"}</span></button>
     </Container>
