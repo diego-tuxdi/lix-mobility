@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Accordion } from "./accordion";
 import { Footer } from "./footer";
 import { Navbar } from "./navigation";
-import { Button, Container, PhoneMockup, Section, SectionHeading, ScrollReveal } from "./ui";
+import { Button, Container, PhoneMockup, Section, SectionHeading, ScrollReveal, AppStoreBadge, GooglePlayBadge } from "./ui";
 import { Calendar, MapPin, Smartphone, Navigation as NavigateIcon, Award, Shield, FileText, CheckCircle } from "lucide-react";
 
 const benefits = [
@@ -248,15 +248,9 @@ export function CaptainsPage() {
   <section id="registro" className="bg-water py-24 sm:py-32"><Container className="flex flex-col items-center text-center">
     <ScrollReveal delay={100}><h2 className="text-balance text-4xl font-semibold tracking-[-.04em] sm:text-6xl">¿Listo para navegar con LIX?</h2></ScrollReveal>
     <ScrollReveal delay={200} className="mt-6 max-w-xl"><p className="text-lg text-muted">Comenzá el proceso de registro y sumate a la plataforma.</p></ScrollReveal>
-    <ScrollReveal delay={300} className="mt-10">
-      <a
-        href={`https://wa.me/5491123456789?text=${encodeURIComponent("Hola LIX Mobility! Quiero iniciar mi registro como capitán.")}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex min-h-12 items-center justify-center rounded-full bg-ink px-8 text-sm font-semibold text-white transition hover:bg-ink-deep active:scale-[0.98] cursor-pointer"
-      >
-        Iniciar Registro por WhatsApp
-      </a>
+    <ScrollReveal delay={300} className="mt-10 flex flex-wrap justify-center gap-4">
+      <AppStoreBadge href="#" />
+      <GooglePlayBadge href="#" />
     </ScrollReveal>
   </Container></section>
   </main><Footer /></>; }
