@@ -47,7 +47,7 @@ export function Pending({ children }: { children: ReactNode }) { return <p class
 export function AppStoreBadge({ href, className = "" }: { href: string; className?: string }) {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer" className={`inline-block transition hover:scale-[1.03] active:scale-[0.98] ${className}`} aria-label="Descargar en App Store">
-      <Image unoptimized src="/img/App Store.svg" alt="Descargar en App Store" width={151} height={49} className="h-10 w-auto" />
+      <Image unoptimized src="/img/App Store.svg" alt="Descargar en App Store" width={196} height={64} className="h-14 w-auto" />
     </a>
   );
 }
@@ -55,7 +55,7 @@ export function AppStoreBadge({ href, className = "" }: { href: string; classNam
 export function GooglePlayBadge({ href, className = "" }: { href: string; className?: string }) {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer" className={`inline-block transition hover:scale-[1.03] active:scale-[0.98] ${className}`} aria-label="Disponible en Google Play">
-      <Image unoptimized src="/img/Google Play.svg" alt="Disponible en Google Play" width={151} height={49} className="h-10 w-auto" />
+      <Image unoptimized src="/img/Google Play.svg" alt="Disponible en Google Play" width={196} height={64} className="h-14 w-auto" />
     </a>
   );
 }
