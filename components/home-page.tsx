@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     question: "¿Qué métodos de pago acepta LIX?",
-    answer: "LIX acepta Mercado Pago y dinero en efectivo."
+    answer: "LIX acepta Mercado Pago con dinero en cuenta y dinero en efectivo."
   },
   {
     question: "¿Dónde está disponible?",
